@@ -1,0 +1,34 @@
+{
+  "objects": [
+    {
+      "query": "SELECT Id, Name, DeveloperName, External_ID__c, Territory2ModelId, Territory2TypeId, ParentTerritory2Id, Description FROM Territory2 WHERE External_ID__c LIKE 'LS.MT.Territory2.%' ORDER BY Name",
+      "operation": "Readonly",
+      "externalId": "External_ID__c"
+    },
+    {
+      "query": "SELECT Id, UserId, Territory2Id, RoleInTerritory2 FROM UserTerritory2Association WHERE Territory2.External_ID__c LIKE 'LS.MT.Territory2.%' ORDER BY Territory2.Name, User.Name",
+      "operation": "Readonly",
+      "externalId": "Id"
+    },
+    {
+      "query": "SELECT Id, ObjectId, Territory2Id FROM ObjectTerritory2Association WHERE Territory2.External_ID__c LIKE 'LS.MT.Territory2.%' ORDER BY Territory2.Name",
+      "operation": "Readonly",
+      "externalId": "Id"
+    },
+    {
+      "query": "SELECT Id, AccountId, Territory2Id, External_ID__c, Advocacy_Score__c, RecommendedPresentationInfo FROM ProviderAcctTerritoryInfo WHERE Territory2.External_ID__c LIKE 'LS.MT.Territory2.%' ORDER BY Territory2.Name, Account.Name",
+      "operation": "Readonly",
+      "externalId": "External_ID__c"
+    },
+    {
+      "query": "SELECT Id, Name, Username, Alias, External_ID__c FROM User WHERE Id IN (SELECT UserId FROM UserTerritory2Association WHERE Territory2.External_ID__c LIKE 'LS.MT.Territory2.%') ORDER BY Name",
+      "operation": "Readonly",
+      "externalId": "External_ID__c"
+    },
+    {
+      "query": "SELECT Id, Name, External_ID__c, Type, RecordTypeId FROM Account WHERE Id IN (SELECT ObjectId FROM ObjectTerritory2Association WHERE Territory2.External_ID__c LIKE 'LS.MT.Territory2.%') ORDER BY Name",
+      "operation": "Readonly",
+      "externalId": "External_ID__c"
+    }
+  ]
+}

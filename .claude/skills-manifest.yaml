@@ -1,0 +1,47 @@
+# External skill manifest for LSDO Build Template.
+# Single source of truth for community skills pulled from third-party repos.
+# After editing, run: bash .claude/scripts/sync-skills.sh
+
+sources:
+  afv:
+    repo: https://github.com/forcedotcom/afv-library
+    type: clone
+    branch: main
+  jaganpro:
+    repo: https://github.com/forcedotcom/afv-library
+    type: clone
+    branch: Jaganpro/sf-skills
+
+skills:
+  # Jaganpro's sf-* skills — deep-dive Salesforce development skills
+  # with validation checklists, XML gotchas, and reference guides.
+  - name: sf-flow
+    source: jaganpro
+    path: skills/sf-flow
+  - name: sf-permissions
+    source: jaganpro
+    path: skills/sf-permissions
+  - name: sf-deploy
+    source: jaganpro
+    path: skills/sf-deploy
+  - name: sf-apex
+    source: jaganpro
+    path: skills/sf-apex
+  - name: sf-soql
+    source: jaganpro
+    path: skills/sf-soql
+  - name: sf-data
+    source: jaganpro
+    path: skills/sf-data
+  - name: sf-debug
+    source: jaganpro
+    path: skills/sf-debug
+  - name: sf-lwc
+    source: jaganpro
+    path: skills/sf-lwc
+  - name: sf-testing
+    source: jaganpro
+    path: skills/sf-testing
+  - name: sf-flex-estimator
+    source: jaganpro
+    path: skills/sf-flex-estimator

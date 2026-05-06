@@ -1,0 +1,8 @@
+﻿"Id","UserId","Territory2Id","RoleInTerritory2","User.External_ID__c","Territory2.External_ID__c"
+"0R0g800000004oPCAQ","005g80000036sIYAAY","0MIg80000004YPhGAM","Manager","LSDO.User.014","LS.MT.Territory2.004"
+"0R0g800000004d8CAA","005g80000036sIYAAY","0MIg80000001icoGAA","Manager","LSDO.User.014","LS.MT.Territory2.001"
+"0R0g800000004mpCAA","005g8000001pk3YAAQ","0MIg80000004YPnGAM","Account Partner","LSDO.User.002","LS.MT.Territory2.006"
+"0R0g800000004mqCAA","005g8000001pk3cAAA","0MIg80000004YPnGAM","Account Partner","LSDO.User.004","LS.MT.Territory2.006"
+"0R0g800000004mnCAA","005g8000001pk3ZAAQ","0MIg80000004YPnGAM","Account Executive","LSDO.User.010","LS.MT.Territory2.006"
+"0R0g800000004moCAA","005g8000001pjH3AAI","0MIg80000004YPnGAM","Solution Engineer","User.001","LS.MT.Territory2.006"
+"0R0g800000004mrCAA","005g80000036sIXAAY","0MIg80000004YPnGAM","Account Executive","LSDO.User.013","LS.MT.Territory2.006"
