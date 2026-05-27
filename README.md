@@ -11,18 +11,18 @@ Build Life Sciences Demo Org solutions with AI-assisted development. This templa
 ## Quick Start
 
 
-# 1. Clone this template
+### 1. Clone this template
 ```bash
 git clone https://github.com/larrydavis-sfdc/LSDOBuildTemplate/ my-lsdo-project
 cd my-lsdo-project
 ```
 
-# 2. Run the installer (installs dependencies, configures MCP, syncs skills)
+### 2. Run the installer (installs dependencies, configures MCP, syncs skills)
 ```bash
 bash install.sh
 ```
 
-# 3. Open in VS Code or Cursor
+### 3. Open in VS Code or Cursor
 ```bash
 code .
 ```
@@ -31,7 +31,7 @@ _or_
 cursor .
 ```
 
-# 4. Start Claude Code and run first-time setup
+### 4. Start Claude Code and run first-time setup
 ```bash
 /setup-lsdo-build
 ```
